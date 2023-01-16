@@ -22,7 +22,11 @@ pipeline {
             }
           }
         }
-
+   stage("Code Quality") {
+      steps {
+          waitForQualityGate abortPipeline: true
+      }
+    }
 
      stage("Build") {
           steps {
@@ -47,4 +51,11 @@ pipeline {
 
 
  }
+
+
+  post {
+         failure {
+             mail bcc: '', body: '''Erreur !!''', cc: '', from: '', replyTo: '', subject: 'Probleme Survenu', to: 'jy_attou@esi.dz'
+         }
+   }
  }

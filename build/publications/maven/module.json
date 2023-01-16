@@ -1,0 +1,61 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example",
+    "module": "jenkins",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.9",
+      "buildId": "i5sc7apbv5fzpjf4bdssetnl2m"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "jenkins-1.0.jar",
+          "url": "jenkins-1.0.jar",
+          "size": 4037,
+          "sha512": "1adf4091aaadf4f13f18edf47ce75786d6ba5f716cc3ec019adbe0d79e700d8699be0e348d7098c6320d99ddd1fac5a925aae935d894a0ac856f3690ee11245a",
+          "sha256": "eb8d5bcf78f9f10cd1a270965c71adf2e9a381770dd121b313866dda4c623517",
+          "sha1": "0c07c5aeb2897bdd6409c2072aa02ed4df94f2b0",
+          "md5": "6924e2fc035520704015f033568e035e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "jenkins-1.0.jar",
+          "url": "jenkins-1.0.jar",
+          "size": 4037,
+          "sha512": "1adf4091aaadf4f13f18edf47ce75786d6ba5f716cc3ec019adbe0d79e700d8699be0e348d7098c6320d99ddd1fac5a925aae935d894a0ac856f3690ee11245a",
+          "sha256": "eb8d5bcf78f9f10cd1a270965c71adf2e9a381770dd121b313866dda4c623517",
+          "sha1": "0c07c5aeb2897bdd6409c2072aa02ed4df94f2b0",
+          "md5": "6924e2fc035520704015f033568e035e"
+        }
+      ]
+    }
+  ]
+}
