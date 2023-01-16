@@ -1,8 +1,5 @@
 pipeline {
   agent any
-
-
-
   stages {
     stage ('Test') {
       steps{
@@ -14,4 +11,10 @@ pipeline {
           junit 'build/test-results/test/TEST-Matrix.xml'
       }
     }
+
+
+
+
+
+ }
  }
