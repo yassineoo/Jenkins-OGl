@@ -6,6 +6,7 @@ pipeline {
 
 
 
+
   tage ('Test') {
         steps{
             bat 'gradle test'
