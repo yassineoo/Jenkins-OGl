@@ -76,7 +76,10 @@ public class Matrix {
 		return mat;
 	}
 
-
+	@Override
+	public int hashCode(){
+		return nrows*ncols;
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if(this == obj) {
