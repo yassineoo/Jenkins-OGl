@@ -7,7 +7,7 @@ pipeline {
 
 
 
-  tage ('Test') {
+  stage ('Test') {
         steps{
             bat 'gradle test'
             archiveArtifacts 'build/test-results/'
