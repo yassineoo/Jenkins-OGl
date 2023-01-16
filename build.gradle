@@ -21,10 +21,10 @@ repositories {
 publishing {
     repositories {
         maven {
-            url System.getenv("url")
+            url System.getenv("URL")
             credentials {
-                username System.getenv("username")
-                password System.getenv("password")
+                username System.getenv("Username")
+                password System.getenv("Password")
             }
         }
     }
