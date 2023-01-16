@@ -22,11 +22,26 @@ pipeline {
             }
           }
         }
-    stage("Code Quality") {
-      steps {
-          waitForQualityGate abortPipeline: true
-      }
-    }
+
+
+     stage("Build") {
+          steps {
+              bat "gradle build"
+              bat "gradle javadoc"
+              archiveArtifacts 'build/libs/*.jar'
+              archiveArtifacts 'build/docs/'
+          }
+        }
+        stage("Deploy") {
+          steps {
+              bat "gradle publish"
+          }
+        }
+        stage("Notification") {
+          steps {
+              notifyEvents message: 'Bonsoir <b>mon ami</b>', token: 'LmPDwCJZ6KuHGdgWOacyK3GQJf_u2ocP'
+          }
+        }
 
 
 
